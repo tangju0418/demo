@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>imageGalley</title>
+  <link rel="stylesheet" href="styles/layout.css" media="screen"/>
     <script type="text/javascript" src="scripts/showPic.js"> </script>
 </head>
 <body>
 <h1>Snapshots</h1>
-<ul>
+<ul id="imageGallery">
     <li>
-    <a href="images/1.jpg" title="The first picture" onclick="showPic(this);return false;">one</a>
+    <a class="popup" href="images/1.jpg" title="The first picture" >
+       <img src="images/1.jpg" alt="one" />
+    </a>
     </li>
     <li>
-    <a href="images/2.jpg" title="The second picture" onclick="showPic(this);return false;">two</a>
+    <a href="images/2.jpg" title="The second picture">
+       <img src="images/2.jpg" alt="two" />
+    </a>
     </li>
     <li>
-    <a href="images/3.jpg" title="The third picture" onclick="showPic(this);return false;">three</a>
+    <a href="images/3.jpg" title="The third picture" >
+       <img src="images/3.jpg" alt="three" />
+    </a>
     </li>
 </ul>
-<img id="display" src="images/4.jpg" alt="one picture" />
 
+<img id="display" src="images/4.jpg" alt="one picture" />
+<p id="description">Choose an image</p>
 </body>
 </html>
