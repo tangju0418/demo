@@ -32,6 +32,10 @@ function moveElement(elementID,final_x,final_y,interval){
     var repeat = "moveElement('"+elementID+" ',"+final_x+","+final_y+","+interval+")";
     elem.movement = setTimeout(repeat,interval);
 }
+var preview = document.getElementById("preview");
+preview.style.position="absolute";
+preview.style.left= "0px";
+preview.style.top= "0px";
 var list = document.getElementById("linklist");
 var links = list.getElementsByTagName("a");
 links[0].onmouseover = function(){
