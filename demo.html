@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+    <script type="text/javascript">
+        var text = "cat mat fat sat";
+        var pattern =/.at/g;
+        var matches = pattern.exec(text);
+        alert(matches.index);
+        alert(matches.lastIndex);
+        matches =pattern.exec(text);
+        alert(matches.index);
+        alert(matches[0]);
+
+    </script>
+</body>
+</html>
