@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+            background-color: #fa6b80;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+</head>
+<body>
+<input type="button" id="btn" value="点击放大" />
+<div></div>
+
+
+<script type="text/javascript">
+    $("#btn").bind('click',(function () {
+        $("div").stop(false,true).animate({
+            'height':200,
+            'width':200
+        },5000,jQuery.linear , function(){
+            $("<p>这是一个div</p>").appendTo($("div"));
+        })
+    }));
+</script>
+
+<!--<script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>-->
+</body>
+</html>
